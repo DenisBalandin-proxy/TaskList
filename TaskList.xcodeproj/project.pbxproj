@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9202F4CC292A48B40050A11E /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202F4CB292A48B40050A11E /* StoreManager.swift */; };
 		A8580EDE2926A14400480465 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8580EDD2926A14400480465 /* AppDelegate.swift */; };
 		A8580EE02926A14400480465 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8580EDF2926A14400480465 /* SceneDelegate.swift */; };
 		A8580EE22926A14400480465 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8580EE12926A14400480465 /* TaskListViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9202F4CB292A48B40050A11E /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		A8580EDA2926A14400480465 /* TaskList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8580EDD2926A14400480465 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8580EDF2926A14400480465 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92A35139292C0C06002D4C1B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8580EE12926A14400480465 /* TaskListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		92A3513A292C0C2F002D4C1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8580EE92926A14500480465 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		92A3513B292C0C5C002D4C1B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A8580EDF2926A14400480465 /* SceneDelegate.swift */,
+				A8580EDD2926A14400480465 /* AppDelegate.swift */,
+				A8580EEE2926A14500480465 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		92A3513C292C0C7B002D4C1B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9202F4CB292A48B40050A11E /* StoreManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		92A3513D292C0C9F002D4C1B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A8580EEB2926A14500480465 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		A8580ED12926A14400480465 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +100,11 @@
 		A8580EDC2926A14400480465 /* TaskList */ = {
 			isa = PBXGroup;
 			children = (
-				A8580EDD2926A14400480465 /* AppDelegate.swift */,
-				A8580EDF2926A14400480465 /* SceneDelegate.swift */,
-				A8580EE12926A14400480465 /* TaskListViewController.swift */,
-				A8580EE92926A14500480465 /* Assets.xcassets */,
-				A8580EEB2926A14500480465 /* LaunchScreen.storyboard */,
-				A8580EEE2926A14500480465 /* Info.plist */,
+				92A3513D292C0C9F002D4C1B /* Storyboards */,
+				92A3513B292C0C5C002D4C1B /* App */,
+				92A3513C292C0C7B002D4C1B /* Services */,
+				92A3513A292C0C2F002D4C1B /* Resources */,
+				92A35139292C0C06002D4C1B /* ViewControllers */,
 				A8580EE62926A14400480465 /* TaskList.xcdatamodeld */,
 			);
 			path = TaskList;
@@ -139,6 +182,7 @@
 			files = (
 				A8580EE82926A14400480465 /* TaskList.xcdatamodeld in Sources */,
 				A8580EE22926A14400480465 /* TaskListViewController.swift in Sources */,
+				9202F4CC292A48B40050A11E /* StoreManager.swift in Sources */,
 				A8580EDE2926A14400480465 /* AppDelegate.swift in Sources */,
 				A8580EE02926A14400480465 /* SceneDelegate.swift in Sources */,
 			);
@@ -279,7 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GBTTU32HS2;
+				DEVELOPMENT_TEAM = R79LXPU844;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TaskList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -287,12 +331,13 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.TaskList;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.Denis.TaskList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -310,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GBTTU32HS2;
+				DEVELOPMENT_TEAM = R79LXPU844;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TaskList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -318,12 +363,13 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.TaskList;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.Denis.TaskList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
